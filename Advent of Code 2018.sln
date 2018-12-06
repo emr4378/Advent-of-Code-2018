@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC_02", "AoC_02\AoC_02.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC_03", "AoC_03\AoC_03.csproj", "{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "AoC_04", "AoC_04\AoC_04.pyproj", "{A49E4F72-C3FD-455D-8978-C351D1C9DF7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,12 @@ Global
 		{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}.Release|x64.Build.0 = Release|Any CPU
 		{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}.Release|x86.ActiveCfg = Release|Any CPU
 		{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}.Release|x86.Build.0 = Release|Any CPU
+		{A49E4F72-C3FD-455D-8978-C351D1C9DF7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A49E4F72-C3FD-455D-8978-C351D1C9DF7A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A49E4F72-C3FD-455D-8978-C351D1C9DF7A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A49E4F72-C3FD-455D-8978-C351D1C9DF7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A49E4F72-C3FD-455D-8978-C351D1C9DF7A}.Release|x64.ActiveCfg = Release|Any CPU
+		{A49E4F72-C3FD-455D-8978-C351D1C9DF7A}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
