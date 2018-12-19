@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AoC_09": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\Projects\\Active\\Advent of Code 2018\\AoC_09\\input\\input.txt\""
+    }
+  }
+}
