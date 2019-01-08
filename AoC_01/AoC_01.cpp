@@ -12,7 +12,7 @@ typedef std::vector<int> FrequencyList;
 typedef std::set<int> FrequencyCache;
 typedef std::pair<FrequencyCache::iterator, bool> FrequencyCacheInsertResult;
 
-static bool parseFrequencyInput(const char* inputFilePath, FrequencyList *outFrequencyList)
+static bool parseFrequencyInput(const char* inputFilePath, FrequencyList* outFrequencyList)
 {
 	assert(inputFilePath != nullptr);
 	assert(outFrequencyList != nullptr);
