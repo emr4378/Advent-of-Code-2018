@@ -11,7 +11,7 @@ int calculateCellPowerLevel(int x, int y, int serialNumber)
 	int powerLevel = rackID * y;				// 2) Begin with a power level of the rack ID times the Y coordinate.
 	powerLevel += serialNumber;					// 3) Increase the power level by the value of the grid serial number.
 	powerLevel *= rackID;						// 4) Set the power level to itself multiplied by the rack ID.
-	powerLevel = (abs(powerLevel) / 100) % 10;	// 5) Keep only the hundreds digit of the power level
+	powerLevel = (powerLevel / 100) % 10;		// 5) Keep only the hundreds digit of the power level
 	powerLevel -= 5;							// 6) Subtract 5 from the power level.
 	return powerLevel;
 }
