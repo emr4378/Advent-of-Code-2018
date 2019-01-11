@@ -28,7 +28,6 @@ namespace AoC_12
 		public string Pattern { get; }
 		public PatternNode UnplantedNode { get; set; }
 		public PatternNode PlantedNode { get; set; }
-		public char? Value { get { return Pattern.Length > 0 ? Pattern[Pattern.Length - 1] : (char?)null; } }
 		public char? Result { get; set; }
 
 		public PatternNode(string pattern)
@@ -79,7 +78,7 @@ namespace AoC_12
 
 			using (var reader = new StreamReader(inputFilePath))
 			{
-				initialState = reader.ReadLine().Substring(Constants.InitialStatePrefix.Length);
+				initialState = reader.ReadLine()?.Substring(Constants.InitialStatePrefix.Length);
 
 				while (!reader.EndOfStream)
 				{
@@ -135,8 +134,7 @@ namespace AoC_12
 						}
 					}
 
-					if (currentNode != null &&
-						currentNode.Result != null)
+					if (currentNode?.Result != null)
 					{
 						newState.Append(currentNode.Result);
 
@@ -181,12 +179,12 @@ namespace AoC_12
 		public static void Main(string[] args)
 		{
 			if (args.Length != 1 ||
-				!File.Exists(args[1]))
+				!File.Exists(args[0]))
 			{
 				throw new ArgumentException("Expected 1 command line argument: input file path");
 			}
 
-			ParseInput(args[0], out string initialState, out PatternNode rootPatternNode);
+			ParseInput(args[0], out var initialState, out var rootPatternNode);
 
 			var part1Sum = SimulatePlantSpread(initialState, rootPatternNode, 20);
 			Console.WriteLine($"(Part 1) The sum of the numbers of all pots containing a plant after 20 generations is: {part1Sum}");
