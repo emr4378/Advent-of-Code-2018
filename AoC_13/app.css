@@ -1,0 +1,14 @@
+﻿body {
+	font-family: 'Segoe UI', sans-serif;
+}
+
+span {
+	font-style: italic;
+}
+
+textarea {
+	resize: none;
+	overflow: hidden;
+	white-space: pre;
+	font-family: Consolas,monospace;
+}
