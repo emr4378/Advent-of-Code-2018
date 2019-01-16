@@ -1,0 +1,1 @@
+Attempt #2 at solution to [Advent of Code 2018 - Day 14](https://adventofcode.com/2018/day/14). My [original Python solution](https://gist.github.com/emr4378/03a2bb3e0abc57420e10e7eb4fcfe909) was taking too long to complete Part 2, so I re-rolled it in C#.
